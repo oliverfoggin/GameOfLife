@@ -1,0 +1,1128 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F623E76E160DCE1F00A7AB7A /* OJFAboutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F623E76D160DCE1F00A7AB7A /* OJFAboutViewController.xib */; };
+		F623E771160DCE7E00A7AB7A /* OJFSettingsTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F623E770160DCE7E00A7AB7A /* OJFSettingsTableViewController.xib */; };
+		F623E773160DCEF400A7AB7A /* OJFSettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F623E772160DCEF400A7AB7A /* OJFSettingsViewController.xib */; };
+		F63F931C160E387A00D98084 /* OJFPatternViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F63F931A160E387A00D98084 /* OJFPatternViewController.m */; };
+		F63F931D160E387A00D98084 /* OJFPatternViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F63F931B160E387A00D98084 /* OJFPatternViewController.xib */; };
+		F6518E86160DD35700B520FB /* OJFColourPickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6518E85160DD35700B520FB /* OJFColourPickerViewController.xib */; };
+		F65333A416090497007DCE46 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F65333A116090490007DCE46 /* QuartzCore.framework */; };
+		F65AD4BF15BC9BFD00187B04 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F65AD4BD15BC9BF400187B04 /* CoreData.framework */; };
+		F677CF5115AE1FBD008A7F68 /* yinYang.png in Resources */ = {isa = PBXBuildFile; fileRef = F677CF4F15AE1FBD008A7F68 /* yinYang.png */; };
+		F677CF5215AE1FBD008A7F68 /* yinYang@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F677CF5015AE1FBD008A7F68 /* yinYang@2x.png */; };
+		F677CF6515AEE903008A7F68 /* OJFGridLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = F677CF6415AEE903008A7F68 /* OJFGridLineView.m */; };
+		F69E9069160CA44700F7B1D8 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F69E9068160CA44700F7B1D8 /* Default@2x.png */; };
+		F69E906C160CA4B700F7B1D8 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F69E906B160CA4B700F7B1D8 /* Default-568h@2x.png */; };
+		F6A055FD160F1AFA00004EC8 /* tickButton.png in Resources */ = {isa = PBXBuildFile; fileRef = F6A055FB160F1AFA00004EC8 /* tickButton.png */; };
+		F6A055FE160F1AFA00004EC8 /* tickButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F6A055FC160F1AFA00004EC8 /* tickButton@2x.png */; };
+		F6A05603160F1EF800004EC8 /* OJFPatternSelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6A05601160F1EF800004EC8 /* OJFPatternSelectViewController.m */; };
+		F6A05604160F1EF800004EC8 /* OJFPatternSelectViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6A05602160F1EF800004EC8 /* OJFPatternSelectViewController.xib */; };
+		F6A05607160F2A8600004EC8 /* Pattern.m in Sources */ = {isa = PBXBuildFile; fileRef = F6A05606160F2A8600004EC8 /* Pattern.m */; };
+		F6A0560A160F2A8700004EC8 /* PatternType.m in Sources */ = {isa = PBXBuildFile; fileRef = F6A05609160F2A8700004EC8 /* PatternType.m */; };
+		F6A05618160F557000004EC8 /* patternButton.png in Resources */ = {isa = PBXBuildFile; fileRef = F6A05616160F557000004EC8 /* patternButton.png */; };
+		F6A05619160F557000004EC8 /* patternButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F6A05617160F557000004EC8 /* patternButton@2x.png */; };
+		F6A0561C16123FD100004EC8 /* OJFPatternCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6A0561B16123FD100004EC8 /* OJFPatternCell.xib */; };
+		F6A0561F1612417300004EC8 /* OJFPatternCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F6A0561E1612417300004EC8 /* OJFPatternCell.m */; };
+		F6B0803015B9D06300962780 /* colourPickerBG.png in Resources */ = {isa = PBXBuildFile; fileRef = F6B0802E15B9D06300962780 /* colourPickerBG.png */; };
+		F6B0803115B9D06300962780 /* colourPickerBG@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F6B0802F15B9D06300962780 /* colourPickerBG@2x.png */; };
+		F6B0803915B9D74800962780 /* colourPickerReticle.png in Resources */ = {isa = PBXBuildFile; fileRef = F6B0803415B9D74800962780 /* colourPickerReticle.png */; };
+		F6B0803A15B9D74800962780 /* colourPickerReticle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F6B0803515B9D74800962780 /* colourPickerReticle@2x.png */; };
+		F6B0804015B9D81900962780 /* OJFColourPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6B0803F15B9D81900962780 /* OJFColourPickerViewController.m */; };
+		F6B0804315B9D83400962780 /* OJFHuePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = F6B0804215B9D83400962780 /* OJFHuePickerView.m */; };
+		F6B0804615B9D84400962780 /* OJFColourPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = F6B0804515B9D84400962780 /* OJFColourPickerView.m */; };
+		F6B0804D15B9E0E500962780 /* sliderBG.png in Resources */ = {isa = PBXBuildFile; fileRef = F6B0804815B9E0E500962780 /* sliderBG.png */; };
+		F6B0804E15B9E0E500962780 /* sliderBG@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F6B0804915B9E0E500962780 /* sliderBG@2x.png */; };
+		F6B0804F15B9E0E500962780 /* toolsBG.png in Resources */ = {isa = PBXBuildFile; fileRef = F6B0804B15B9E0E500962780 /* toolsBG.png */; };
+		F6B0805015B9E0E500962780 /* toolsBG@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F6B0804C15B9E0E500962780 /* toolsBG@2x.png */; };
+		F6B0805715B9E88700962780 /* wrapEdgesDefault.png in Resources */ = {isa = PBXBuildFile; fileRef = F6B0805215B9E88700962780 /* wrapEdgesDefault.png */; };
+		F6B0805815B9E88700962780 /* wrapEdgesDefault@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F6B0805315B9E88700962780 /* wrapEdgesDefault@2x.png */; };
+		F6B0805915B9E88700962780 /* wrapEdgesSelected.png in Resources */ = {isa = PBXBuildFile; fileRef = F6B0805515B9E88700962780 /* wrapEdgesSelected.png */; };
+		F6B0805A15B9E88700962780 /* wrapEdgesSelected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F6B0805615B9E88700962780 /* wrapEdgesSelected@2x.png */; };
+		F6B5A1B2160DCD2F007E5B64 /* OJFViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6B5A1B1160DCD2F007E5B64 /* OJFViewController.xib */; };
+		F6BC44B415B0689D009DA4F6 /* OJFGestureRecogniser.m in Sources */ = {isa = PBXBuildFile; fileRef = F6BC44B315B0689D009DA4F6 /* OJFGestureRecogniser.m */; };
+		F6C38F6215ACDF2100166590 /* colourCircle.png in Resources */ = {isa = PBXBuildFile; fileRef = F6C38F6015ACDF2100166590 /* colourCircle.png */; };
+		F6C7A5C215B9F13E00687837 /* hueColourPickerBG.png in Resources */ = {isa = PBXBuildFile; fileRef = F6C7A5C015B9F13E00687837 /* hueColourPickerBG.png */; };
+		F6C7A5C315B9F13E00687837 /* hueColourPickerBG@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F6C7A5C115B9F13E00687837 /* hueColourPickerBG@2x.png */; };
+		F6C7A5CB15BA06DB00687837 /* UIColor-Expanded.m in Sources */ = {isa = PBXBuildFile; fileRef = F6C7A5C815BA06DA00687837 /* UIColor-Expanded.m */; };
+		F6C7A5CC15BA06DB00687837 /* UIColor-HSVAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F6C7A5CA15BA06DB00687837 /* UIColor-HSVAdditions.m */; };
+		F6C7A5CD15BA083000687837 /* UIColor-HSVAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F6C7A5CA15BA06DB00687837 /* UIColor-HSVAdditions.m */; };
+		F6C7A5CE15BA083200687837 /* UIColor-Expanded.m in Sources */ = {isa = PBXBuildFile; fileRef = F6C7A5C815BA06DA00687837 /* UIColor-Expanded.m */; };
+		F6C7A5D215BA12D600687837 /* randomButton.png in Resources */ = {isa = PBXBuildFile; fileRef = F6C7A5D015BA12D600687837 /* randomButton.png */; };
+		F6C7A5D315BA12D600687837 /* randomButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F6C7A5D115BA12D600687837 /* randomButton@2x.png */; };
+		F6C7A5D715BA137A00687837 /* clearButton.png in Resources */ = {isa = PBXBuildFile; fileRef = F6C7A5D515BA137A00687837 /* clearButton.png */; };
+		F6C7A5D815BA137A00687837 /* clearButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F6C7A5D615BA137A00687837 /* clearButton@2x.png */; };
+		F6C7A5DC15BA176500687837 /* playBG.png in Resources */ = {isa = PBXBuildFile; fileRef = F6C7A5DA15BA176500687837 /* playBG.png */; };
+		F6C7A5DD15BA176500687837 /* playBG@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F6C7A5DB15BA176500687837 /* playBG@2x.png */; };
+		F6C7A5E415BA192600687837 /* playButton.png in Resources */ = {isa = PBXBuildFile; fileRef = F6C7A5DF15BA192600687837 /* playButton.png */; };
+		F6C7A5E515BA192600687837 /* playButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F6C7A5E015BA192600687837 /* playButton@2x.png */; };
+		F6C7A5E615BA192600687837 /* stepButton.png in Resources */ = {isa = PBXBuildFile; fileRef = F6C7A5E215BA192600687837 /* stepButton.png */; };
+		F6C7A5E715BA192600687837 /* stepButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F6C7A5E315BA192600687837 /* stepButton@2x.png */; };
+		F6C7A5ED15BA1A4500687837 /* pauseButton.png in Resources */ = {isa = PBXBuildFile; fileRef = F6C7A5EB15BA1A4500687837 /* pauseButton.png */; };
+		F6C7A5EE15BA1A4500687837 /* pauseButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F6C7A5EC15BA1A4500687837 /* pauseButton@2x.png */; };
+		F6C7A5F615BA2B5A00687837 /* buttonOff.png in Resources */ = {isa = PBXBuildFile; fileRef = F6C7A5F115BA2B5A00687837 /* buttonOff.png */; };
+		F6C7A5F715BA2B5A00687837 /* buttonOff@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F6C7A5F215BA2B5A00687837 /* buttonOff@2x.png */; };
+		F6C7A5F815BA2B5A00687837 /* buttonOn.png in Resources */ = {isa = PBXBuildFile; fileRef = F6C7A5F415BA2B5A00687837 /* buttonOn.png */; };
+		F6C7A5F915BA2B5A00687837 /* buttonOn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F6C7A5F515BA2B5A00687837 /* buttonOn@2x.png */; };
+		F6C7A5FC15BA2D3500687837 /* OJFSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6C7A5FB15BA2D3500687837 /* OJFSettingsViewController.m */; };
+		F6C7A60015BB12B900687837 /* GameOfLife.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F6C7A5FE15BB12B900687837 /* GameOfLife.xcdatamodeld */; };
+		F6DCC03B15BCA11600CE2E6A /* Condition.m in Sources */ = {isa = PBXBuildFile; fileRef = F6DCC03A15BCA11600CE2E6A /* Condition.m */; };
+		F6DCC04715BCA6EC00CE2E6A /* OJFSettingsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6DCC04615BCA6EC00CE2E6A /* OJFSettingsTableViewController.m */; };
+		F6E0777815AC30D40066EFCC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6E0777715AC30D40066EFCC /* UIKit.framework */; };
+		F6E0777A15AC30D40066EFCC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6E0777915AC30D40066EFCC /* Foundation.framework */; };
+		F6E0777C15AC30D40066EFCC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6E0777B15AC30D40066EFCC /* CoreGraphics.framework */; };
+		F6E0778215AC30D40066EFCC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F6E0778015AC30D40066EFCC /* InfoPlist.strings */; };
+		F6E0778415AC30D40066EFCC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F6E0778315AC30D40066EFCC /* main.m */; };
+		F6E0778815AC30D40066EFCC /* OJFAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F6E0778715AC30D40066EFCC /* OJFAppDelegate.m */; };
+		F6E0778E15AC30D40066EFCC /* OJFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6E0778D15AC30D40066EFCC /* OJFViewController.m */; };
+		F6E0779615AC30D40066EFCC /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6E0779515AC30D40066EFCC /* SenTestingKit.framework */; };
+		F6E0779715AC30D40066EFCC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6E0777715AC30D40066EFCC /* UIKit.framework */; };
+		F6E0779815AC30D40066EFCC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6E0777915AC30D40066EFCC /* Foundation.framework */; };
+		F6E077A015AC30D40066EFCC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F6E0779E15AC30D40066EFCC /* InfoPlist.strings */; };
+		F6E077A315AC30D40066EFCC /* GameOfLife2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = F6E077A215AC30D40066EFCC /* GameOfLife2Tests.m */; };
+		F6E077C715AC8A3A0066EFCC /* OJFCellMap.m in Sources */ = {isa = PBXBuildFile; fileRef = F6E077C615AC8A3A0066EFCC /* OJFCellMap.m */; };
+		F6E077CB15AC8B4C0066EFCC /* OJFGridView.m in Sources */ = {isa = PBXBuildFile; fileRef = F6E077CA15AC8B4C0066EFCC /* OJFGridView.m */; };
+		F6E43D801681185C00246F1A /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = F6E43D7F1681185C00246F1A /* Default.png */; };
+		F6F6E22616124624005C41A1 /* UIImage+PatternString.m in Sources */ = {isa = PBXBuildFile; fileRef = F6F6E22516124624005C41A1 /* UIImage+PatternString.m */; };
+		F6F6E22A16125819005C41A1 /* Condition+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = F6F6E22916125819005C41A1 /* Condition+Helper.m */; };
+		F6F6E22D16125828005C41A1 /* LifeType+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = F6F6E22C16125828005C41A1 /* LifeType+Helper.m */; };
+		F6F6E23016125837005C41A1 /* LifeSetting+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = F6F6E22F16125837005C41A1 /* LifeSetting+Helper.m */; };
+		F6F6E2331612585A005C41A1 /* PatternType+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = F6F6E2321612585A005C41A1 /* PatternType+Helper.m */; };
+		F6F6E2361612586A005C41A1 /* Pattern+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = F6F6E2351612586A005C41A1 /* Pattern+Helper.m */; };
+		F6FCB94E15BDD68B00DF221E /* LifeSetting.m in Sources */ = {isa = PBXBuildFile; fileRef = F6FCB94D15BDD68B00DF221E /* LifeSetting.m */; };
+		F6FCB95115BDD68C00DF221E /* LifeType.m in Sources */ = {isa = PBXBuildFile; fileRef = F6FCB95015BDD68C00DF221E /* LifeType.m */; };
+		F6FCB95C15BE056300DF221E /* moreButton.png in Resources */ = {isa = PBXBuildFile; fileRef = F6FCB95A15BE056300DF221E /* moreButton.png */; };
+		F6FCB95D15BE056300DF221E /* moreButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F6FCB95B15BE056300DF221E /* moreButton@2x.png */; };
+		F6FCB96115BE06A700DF221E /* OJFAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6FCB96015BE06A700DF221E /* OJFAboutViewController.m */; };
+		F6FCB96515BE094E00DF221E /* about.html in Resources */ = {isa = PBXBuildFile; fileRef = F6FCB96315BE094E00DF221E /* about.html */; };
+		F6FCB96615BE094E00DF221E /* docstyle.css in Resources */ = {isa = PBXBuildFile; fileRef = F6FCB96415BE094E00DF221E /* docstyle.css */; };
+		F6FCB96815BE09A000DF221E /* Game of Life Logo 2.png in Resources */ = {isa = PBXBuildFile; fileRef = F6FCB96715BE09A000DF221E /* Game of Life Logo 2.png */; };
+		F6FCB96A15BE09A400DF221E /* Game of Life Logo 3.png in Resources */ = {isa = PBXBuildFile; fileRef = F6FCB96915BE09A400DF221E /* Game of Life Logo 3.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F6E0779915AC30D40066EFCC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F6E0776A15AC30D40066EFCC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F6E0777215AC30D40066EFCC;
+			remoteInfo = GameOfLife2;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F623E76D160DCE1F00A7AB7A /* OJFAboutViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = OJFAboutViewController.xib; path = "About View/OJFAboutViewController.xib"; sourceTree = "<group>"; };
+		F623E770160DCE7E00A7AB7A /* OJFSettingsTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = OJFSettingsTableViewController.xib; path = "Settings View/OJFSettingsTableViewController.xib"; sourceTree = "<group>"; };
+		F623E772160DCEF400A7AB7A /* OJFSettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = OJFSettingsViewController.xib; path = "Settings View/OJFSettingsViewController.xib"; sourceTree = "<group>"; };
+		F63F9319160E387A00D98084 /* OJFPatternViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OJFPatternViewController.h; path = Patterns/OJFPatternViewController.h; sourceTree = "<group>"; };
+		F63F931A160E387A00D98084 /* OJFPatternViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OJFPatternViewController.m; path = Patterns/OJFPatternViewController.m; sourceTree = "<group>"; };
+		F63F931B160E387A00D98084 /* OJFPatternViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = OJFPatternViewController.xib; path = Patterns/OJFPatternViewController.xib; sourceTree = "<group>"; };
+		F6518E85160DD35700B520FB /* OJFColourPickerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = OJFColourPickerViewController.xib; path = "Colour Picker View/OJFColourPickerViewController.xib"; sourceTree = "<group>"; };
+		F65333A116090490007DCE46 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		F65AD4BD15BC9BF400187B04 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		F677CF4F15AE1FBD008A7F68 /* yinYang.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yinYang.png; sourceTree = "<group>"; };
+		F677CF5015AE1FBD008A7F68 /* yinYang@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "yinYang@2x.png"; sourceTree = "<group>"; };
+		F677CF6315AEE903008A7F68 /* OJFGridLineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OJFGridLineView.h; sourceTree = "<group>"; };
+		F677CF6415AEE903008A7F68 /* OJFGridLineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OJFGridLineView.m; sourceTree = "<group>"; };
+		F687365C160B95B000D2B7EC /* GameOfLife 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "GameOfLife 2.xcdatamodel"; sourceTree = "<group>"; };
+		F69E9068160CA44700F7B1D8 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		F69E906B160CA4B700F7B1D8 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		F6A055FB160F1AFA00004EC8 /* tickButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tickButton.png; sourceTree = "<group>"; };
+		F6A055FC160F1AFA00004EC8 /* tickButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tickButton@2x.png"; sourceTree = "<group>"; };
+		F6A05600160F1EF800004EC8 /* OJFPatternSelectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OJFPatternSelectViewController.h; path = Patterns/OJFPatternSelectViewController.h; sourceTree = "<group>"; };
+		F6A05601160F1EF800004EC8 /* OJFPatternSelectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OJFPatternSelectViewController.m; path = Patterns/OJFPatternSelectViewController.m; sourceTree = "<group>"; };
+		F6A05602160F1EF800004EC8 /* OJFPatternSelectViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = OJFPatternSelectViewController.xib; path = Patterns/OJFPatternSelectViewController.xib; sourceTree = "<group>"; };
+		F6A05605160F2A8600004EC8 /* Pattern.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Pattern.h; path = "Managed Object Models/Pattern.h"; sourceTree = "<group>"; };
+		F6A05606160F2A8600004EC8 /* Pattern.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Pattern.m; path = "Managed Object Models/Pattern.m"; sourceTree = "<group>"; };
+		F6A05608160F2A8700004EC8 /* PatternType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PatternType.h; path = "Managed Object Models/PatternType.h"; sourceTree = "<group>"; };
+		F6A05609160F2A8700004EC8 /* PatternType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PatternType.m; path = "Managed Object Models/PatternType.m"; sourceTree = "<group>"; };
+		F6A05616160F557000004EC8 /* patternButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = patternButton.png; sourceTree = "<group>"; };
+		F6A05617160F557000004EC8 /* patternButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "patternButton@2x.png"; sourceTree = "<group>"; };
+		F6A0561B16123FD100004EC8 /* OJFPatternCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = OJFPatternCell.xib; path = Patterns/OJFPatternCell.xib; sourceTree = "<group>"; };
+		F6A0561D1612417300004EC8 /* OJFPatternCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OJFPatternCell.h; path = Patterns/OJFPatternCell.h; sourceTree = "<group>"; };
+		F6A0561E1612417300004EC8 /* OJFPatternCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OJFPatternCell.m; path = Patterns/OJFPatternCell.m; sourceTree = "<group>"; };
+		F6B0802E15B9D06300962780 /* colourPickerBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = colourPickerBG.png; sourceTree = "<group>"; };
+		F6B0802F15B9D06300962780 /* colourPickerBG@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "colourPickerBG@2x.png"; sourceTree = "<group>"; };
+		F6B0803415B9D74800962780 /* colourPickerReticle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = colourPickerReticle.png; sourceTree = "<group>"; };
+		F6B0803515B9D74800962780 /* colourPickerReticle@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "colourPickerReticle@2x.png"; sourceTree = "<group>"; };
+		F6B0803E15B9D81900962780 /* OJFColourPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OJFColourPickerViewController.h; path = "Colour Picker View/OJFColourPickerViewController.h"; sourceTree = "<group>"; };
+		F6B0803F15B9D81900962780 /* OJFColourPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OJFColourPickerViewController.m; path = "Colour Picker View/OJFColourPickerViewController.m"; sourceTree = "<group>"; };
+		F6B0804115B9D83400962780 /* OJFHuePickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OJFHuePickerView.h; path = "Colour Picker View/OJFHuePickerView.h"; sourceTree = "<group>"; };
+		F6B0804215B9D83400962780 /* OJFHuePickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OJFHuePickerView.m; path = "Colour Picker View/OJFHuePickerView.m"; sourceTree = "<group>"; };
+		F6B0804415B9D84400962780 /* OJFColourPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OJFColourPickerView.h; path = "Colour Picker View/OJFColourPickerView.h"; sourceTree = "<group>"; };
+		F6B0804515B9D84400962780 /* OJFColourPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OJFColourPickerView.m; path = "Colour Picker View/OJFColourPickerView.m"; sourceTree = "<group>"; };
+		F6B0804815B9E0E500962780 /* sliderBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sliderBG.png; sourceTree = "<group>"; };
+		F6B0804915B9E0E500962780 /* sliderBG@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sliderBG@2x.png"; sourceTree = "<group>"; };
+		F6B0804B15B9E0E500962780 /* toolsBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = toolsBG.png; sourceTree = "<group>"; };
+		F6B0804C15B9E0E500962780 /* toolsBG@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "toolsBG@2x.png"; sourceTree = "<group>"; };
+		F6B0805215B9E88700962780 /* wrapEdgesDefault.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wrapEdgesDefault.png; sourceTree = "<group>"; };
+		F6B0805315B9E88700962780 /* wrapEdgesDefault@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wrapEdgesDefault@2x.png"; sourceTree = "<group>"; };
+		F6B0805515B9E88700962780 /* wrapEdgesSelected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wrapEdgesSelected.png; sourceTree = "<group>"; };
+		F6B0805615B9E88700962780 /* wrapEdgesSelected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "wrapEdgesSelected@2x.png"; sourceTree = "<group>"; };
+		F6B5A1B1160DCD2F007E5B64 /* OJFViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OJFViewController.xib; sourceTree = "<group>"; };
+		F6BC44B215B0689D009DA4F6 /* OJFGestureRecogniser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OJFGestureRecogniser.h; sourceTree = "<group>"; };
+		F6BC44B315B0689D009DA4F6 /* OJFGestureRecogniser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OJFGestureRecogniser.m; sourceTree = "<group>"; };
+		F6C38F6015ACDF2100166590 /* colourCircle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = colourCircle.png; path = images/colourCircle.png; sourceTree = SOURCE_ROOT; };
+		F6C7A5C015B9F13E00687837 /* hueColourPickerBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hueColourPickerBG.png; sourceTree = "<group>"; };
+		F6C7A5C115B9F13E00687837 /* hueColourPickerBG@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hueColourPickerBG@2x.png"; sourceTree = "<group>"; };
+		F6C7A5C715BA06DA00687837 /* UIColor-Expanded.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIColor-Expanded.h"; path = "../../../Downloads/iphone-color-picker/Classes/UIColor-Expanded.h"; sourceTree = "<group>"; };
+		F6C7A5C815BA06DA00687837 /* UIColor-Expanded.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIColor-Expanded.m"; path = "../../../Downloads/iphone-color-picker/Classes/UIColor-Expanded.m"; sourceTree = "<group>"; };
+		F6C7A5C915BA06DB00687837 /* UIColor-HSVAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIColor-HSVAdditions.h"; path = "../../../Downloads/iphone-color-picker/Classes/UIColor-HSVAdditions.h"; sourceTree = "<group>"; };
+		F6C7A5CA15BA06DB00687837 /* UIColor-HSVAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIColor-HSVAdditions.m"; path = "../../../Downloads/iphone-color-picker/Classes/UIColor-HSVAdditions.m"; sourceTree = "<group>"; };
+		F6C7A5D015BA12D600687837 /* randomButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = randomButton.png; sourceTree = "<group>"; };
+		F6C7A5D115BA12D600687837 /* randomButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "randomButton@2x.png"; sourceTree = "<group>"; };
+		F6C7A5D515BA137A00687837 /* clearButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clearButton.png; sourceTree = "<group>"; };
+		F6C7A5D615BA137A00687837 /* clearButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "clearButton@2x.png"; sourceTree = "<group>"; };
+		F6C7A5DA15BA176500687837 /* playBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = playBG.png; sourceTree = "<group>"; };
+		F6C7A5DB15BA176500687837 /* playBG@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "playBG@2x.png"; sourceTree = "<group>"; };
+		F6C7A5DF15BA192600687837 /* playButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = playButton.png; sourceTree = "<group>"; };
+		F6C7A5E015BA192600687837 /* playButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "playButton@2x.png"; sourceTree = "<group>"; };
+		F6C7A5E215BA192600687837 /* stepButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stepButton.png; sourceTree = "<group>"; };
+		F6C7A5E315BA192600687837 /* stepButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "stepButton@2x.png"; sourceTree = "<group>"; };
+		F6C7A5EB15BA1A4500687837 /* pauseButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pauseButton.png; sourceTree = "<group>"; };
+		F6C7A5EC15BA1A4500687837 /* pauseButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pauseButton@2x.png"; sourceTree = "<group>"; };
+		F6C7A5F115BA2B5A00687837 /* buttonOff.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buttonOff.png; sourceTree = "<group>"; };
+		F6C7A5F215BA2B5A00687837 /* buttonOff@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "buttonOff@2x.png"; sourceTree = "<group>"; };
+		F6C7A5F415BA2B5A00687837 /* buttonOn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buttonOn.png; sourceTree = "<group>"; };
+		F6C7A5F515BA2B5A00687837 /* buttonOn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "buttonOn@2x.png"; sourceTree = "<group>"; };
+		F6C7A5FA15BA2D3500687837 /* OJFSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OJFSettingsViewController.h; path = "Settings View/OJFSettingsViewController.h"; sourceTree = "<group>"; };
+		F6C7A5FB15BA2D3500687837 /* OJFSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OJFSettingsViewController.m; path = "Settings View/OJFSettingsViewController.m"; sourceTree = "<group>"; };
+		F6C7A5FF15BB12B900687837 /* GameOfLife.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GameOfLife.xcdatamodel; sourceTree = "<group>"; };
+		F6DCC03915BCA11600CE2E6A /* Condition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Condition.h; path = "Managed Object Models/Condition.h"; sourceTree = "<group>"; };
+		F6DCC03A15BCA11600CE2E6A /* Condition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Condition.m; path = "Managed Object Models/Condition.m"; sourceTree = "<group>"; };
+		F6DCC04515BCA6EC00CE2E6A /* OJFSettingsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OJFSettingsTableViewController.h; path = "Settings View/OJFSettingsTableViewController.h"; sourceTree = "<group>"; };
+		F6DCC04615BCA6EC00CE2E6A /* OJFSettingsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OJFSettingsTableViewController.m; path = "Settings View/OJFSettingsTableViewController.m"; sourceTree = "<group>"; };
+		F6E0777315AC30D40066EFCC /* GameOfLife2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GameOfLife2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6E0777715AC30D40066EFCC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F6E0777915AC30D40066EFCC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F6E0777B15AC30D40066EFCC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F6E0777F15AC30D40066EFCC /* GameOfLife2-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GameOfLife2-Info.plist"; sourceTree = "<group>"; };
+		F6E0778115AC30D40066EFCC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F6E0778315AC30D40066EFCC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F6E0778515AC30D40066EFCC /* GameOfLife2-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GameOfLife2-Prefix.pch"; sourceTree = "<group>"; };
+		F6E0778615AC30D40066EFCC /* OJFAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OJFAppDelegate.h; sourceTree = "<group>"; };
+		F6E0778715AC30D40066EFCC /* OJFAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OJFAppDelegate.m; sourceTree = "<group>"; };
+		F6E0778C15AC30D40066EFCC /* OJFViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OJFViewController.h; sourceTree = "<group>"; };
+		F6E0778D15AC30D40066EFCC /* OJFViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OJFViewController.m; sourceTree = "<group>"; };
+		F6E0779415AC30D40066EFCC /* GameOfLife2Tests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GameOfLife2Tests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6E0779515AC30D40066EFCC /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		F6E0779D15AC30D40066EFCC /* GameOfLife2Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GameOfLife2Tests-Info.plist"; sourceTree = "<group>"; };
+		F6E0779F15AC30D40066EFCC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F6E077A115AC30D40066EFCC /* GameOfLife2Tests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameOfLife2Tests.h; sourceTree = "<group>"; };
+		F6E077A215AC30D40066EFCC /* GameOfLife2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameOfLife2Tests.m; sourceTree = "<group>"; };
+		F6E077C515AC8A3A0066EFCC /* OJFCellMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OJFCellMap.h; sourceTree = "<group>"; };
+		F6E077C615AC8A3A0066EFCC /* OJFCellMap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OJFCellMap.m; sourceTree = "<group>"; };
+		F6E077C915AC8B4C0066EFCC /* OJFGridView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OJFGridView.h; sourceTree = "<group>"; };
+		F6E077CA15AC8B4C0066EFCC /* OJFGridView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OJFGridView.m; sourceTree = "<group>"; };
+		F6E43D7F1681185C00246F1A /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		F6F6E22416124624005C41A1 /* UIImage+PatternString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+PatternString.h"; path = "../../Categories/UIImage+PatternString/UIImage+PatternString.h"; sourceTree = "<group>"; };
+		F6F6E22516124624005C41A1 /* UIImage+PatternString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+PatternString.m"; path = "../../Categories/UIImage+PatternString/UIImage+PatternString.m"; sourceTree = "<group>"; };
+		F6F6E22816125819005C41A1 /* Condition+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Condition+Helper.h"; path = "Managed Object Models/Categories/Condition+Helper.h"; sourceTree = "<group>"; };
+		F6F6E22916125819005C41A1 /* Condition+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Condition+Helper.m"; path = "Managed Object Models/Categories/Condition+Helper.m"; sourceTree = "<group>"; };
+		F6F6E22B16125828005C41A1 /* LifeType+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "LifeType+Helper.h"; path = "Managed Object Models/Categories/LifeType+Helper.h"; sourceTree = "<group>"; };
+		F6F6E22C16125828005C41A1 /* LifeType+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "LifeType+Helper.m"; path = "Managed Object Models/Categories/LifeType+Helper.m"; sourceTree = "<group>"; };
+		F6F6E22E16125837005C41A1 /* LifeSetting+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "LifeSetting+Helper.h"; path = "Managed Object Models/Categories/LifeSetting+Helper.h"; sourceTree = "<group>"; };
+		F6F6E22F16125837005C41A1 /* LifeSetting+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "LifeSetting+Helper.m"; path = "Managed Object Models/Categories/LifeSetting+Helper.m"; sourceTree = "<group>"; };
+		F6F6E2311612585A005C41A1 /* PatternType+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "PatternType+Helper.h"; path = "Managed Object Models/Categories/PatternType+Helper.h"; sourceTree = "<group>"; };
+		F6F6E2321612585A005C41A1 /* PatternType+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "PatternType+Helper.m"; path = "Managed Object Models/Categories/PatternType+Helper.m"; sourceTree = "<group>"; };
+		F6F6E2341612586A005C41A1 /* Pattern+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Pattern+Helper.h"; path = "Managed Object Models/Categories/Pattern+Helper.h"; sourceTree = "<group>"; };
+		F6F6E2351612586A005C41A1 /* Pattern+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Pattern+Helper.m"; path = "Managed Object Models/Categories/Pattern+Helper.m"; sourceTree = "<group>"; };
+		F6FCB94C15BDD68B00DF221E /* LifeSetting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LifeSetting.h; path = "Managed Object Models/LifeSetting.h"; sourceTree = "<group>"; };
+		F6FCB94D15BDD68B00DF221E /* LifeSetting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LifeSetting.m; path = "Managed Object Models/LifeSetting.m"; sourceTree = "<group>"; };
+		F6FCB94F15BDD68C00DF221E /* LifeType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LifeType.h; path = "Managed Object Models/LifeType.h"; sourceTree = "<group>"; };
+		F6FCB95015BDD68C00DF221E /* LifeType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LifeType.m; path = "Managed Object Models/LifeType.m"; sourceTree = "<group>"; };
+		F6FCB95A15BE056300DF221E /* moreButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = moreButton.png; sourceTree = "<group>"; };
+		F6FCB95B15BE056300DF221E /* moreButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "moreButton@2x.png"; sourceTree = "<group>"; };
+		F6FCB95F15BE06A700DF221E /* OJFAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OJFAboutViewController.h; path = "About View/OJFAboutViewController.h"; sourceTree = "<group>"; };
+		F6FCB96015BE06A700DF221E /* OJFAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OJFAboutViewController.m; path = "About View/OJFAboutViewController.m"; sourceTree = "<group>"; };
+		F6FCB96315BE094E00DF221E /* about.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = about.html; sourceTree = "<group>"; };
+		F6FCB96415BE094E00DF221E /* docstyle.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = docstyle.css; sourceTree = "<group>"; };
+		F6FCB96715BE09A000DF221E /* Game of Life Logo 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Game of Life Logo 2.png"; sourceTree = "<group>"; };
+		F6FCB96915BE09A400DF221E /* Game of Life Logo 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Game of Life Logo 3.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F6E0777015AC30D40066EFCC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F65AD4BF15BC9BFD00187B04 /* CoreData.framework in Frameworks */,
+				F6E0777815AC30D40066EFCC /* UIKit.framework in Frameworks */,
+				F65333A416090497007DCE46 /* QuartzCore.framework in Frameworks */,
+				F6E0777A15AC30D40066EFCC /* Foundation.framework in Frameworks */,
+				F6E0777C15AC30D40066EFCC /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6E0779015AC30D40066EFCC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6E0779615AC30D40066EFCC /* SenTestingKit.framework in Frameworks */,
+				F6E0779715AC30D40066EFCC /* UIKit.framework in Frameworks */,
+				F6E0779815AC30D40066EFCC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F65333A5160A60F0007DCE46 /* Patterns */ = {
+			isa = PBXGroup;
+			children = (
+				F6A0561D1612417300004EC8 /* OJFPatternCell.h */,
+				F6A0561E1612417300004EC8 /* OJFPatternCell.m */,
+				F6A0561B16123FD100004EC8 /* OJFPatternCell.xib */,
+				F63F9319160E387A00D98084 /* OJFPatternViewController.h */,
+				F63F931A160E387A00D98084 /* OJFPatternViewController.m */,
+				F63F931B160E387A00D98084 /* OJFPatternViewController.xib */,
+				F6A05600160F1EF800004EC8 /* OJFPatternSelectViewController.h */,
+				F6A05601160F1EF800004EC8 /* OJFPatternSelectViewController.m */,
+				F6A05602160F1EF800004EC8 /* OJFPatternSelectViewController.xib */,
+			);
+			name = Patterns;
+			sourceTree = "<group>";
+		};
+		F65AD4B815BC9BB300187B04 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F6DCC03915BCA11600CE2E6A /* Condition.h */,
+				F6DCC03A15BCA11600CE2E6A /* Condition.m */,
+				F6FCB94F15BDD68C00DF221E /* LifeType.h */,
+				F6FCB95015BDD68C00DF221E /* LifeType.m */,
+				F6FCB94C15BDD68B00DF221E /* LifeSetting.h */,
+				F6FCB94D15BDD68B00DF221E /* LifeSetting.m */,
+				F6A05608160F2A8700004EC8 /* PatternType.h */,
+				F6A05609160F2A8700004EC8 /* PatternType.m */,
+				F6A05605160F2A8600004EC8 /* Pattern.h */,
+				F6A05606160F2A8600004EC8 /* Pattern.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		F677CF4E15AE1FBD008A7F68 /* yinYang */ = {
+			isa = PBXGroup;
+			children = (
+				F677CF4F15AE1FBD008A7F68 /* yinYang.png */,
+				F677CF5015AE1FBD008A7F68 /* yinYang@2x.png */,
+			);
+			name = yinYang;
+			path = images/yinYang;
+			sourceTree = SOURCE_ROOT;
+		};
+		F6A055FA160F1AFA00004EC8 /* tickButton */ = {
+			isa = PBXGroup;
+			children = (
+				F6A055FB160F1AFA00004EC8 /* tickButton.png */,
+				F6A055FC160F1AFA00004EC8 /* tickButton@2x.png */,
+			);
+			name = tickButton;
+			path = images/tickButton;
+			sourceTree = SOURCE_ROOT;
+		};
+		F6A05615160F557000004EC8 /* patternButton */ = {
+			isa = PBXGroup;
+			children = (
+				F6A05616160F557000004EC8 /* patternButton.png */,
+				F6A05617160F557000004EC8 /* patternButton@2x.png */,
+			);
+			name = patternButton;
+			path = images/patternButton;
+			sourceTree = SOURCE_ROOT;
+		};
+		F6B0802D15B9D06300962780 /* colourPickerBG */ = {
+			isa = PBXGroup;
+			children = (
+				F6B0802E15B9D06300962780 /* colourPickerBG.png */,
+				F6B0802F15B9D06300962780 /* colourPickerBG@2x.png */,
+			);
+			name = colourPickerBG;
+			path = images/colourPickerBG;
+			sourceTree = SOURCE_ROOT;
+		};
+		F6B0803315B9D74800962780 /* colourPickerReticle */ = {
+			isa = PBXGroup;
+			children = (
+				F6B0803415B9D74800962780 /* colourPickerReticle.png */,
+				F6B0803515B9D74800962780 /* colourPickerReticle@2x.png */,
+			);
+			name = colourPickerReticle;
+			path = images/colourPickerReticle;
+			sourceTree = SOURCE_ROOT;
+		};
+		F6B0803D15B9D7CB00962780 /* Colour Picker View */ = {
+			isa = PBXGroup;
+			children = (
+				F6C7A5C715BA06DA00687837 /* UIColor-Expanded.h */,
+				F6C7A5C815BA06DA00687837 /* UIColor-Expanded.m */,
+				F6C7A5C915BA06DB00687837 /* UIColor-HSVAdditions.h */,
+				F6C7A5CA15BA06DB00687837 /* UIColor-HSVAdditions.m */,
+				F6B0803E15B9D81900962780 /* OJFColourPickerViewController.h */,
+				F6B0803F15B9D81900962780 /* OJFColourPickerViewController.m */,
+				F6B0804115B9D83400962780 /* OJFHuePickerView.h */,
+				F6B0804215B9D83400962780 /* OJFHuePickerView.m */,
+				F6B0804415B9D84400962780 /* OJFColourPickerView.h */,
+				F6B0804515B9D84400962780 /* OJFColourPickerView.m */,
+				F6518E85160DD35700B520FB /* OJFColourPickerViewController.xib */,
+			);
+			name = "Colour Picker View";
+			sourceTree = "<group>";
+		};
+		F6B0804715B9E0E500962780 /* sliderBG */ = {
+			isa = PBXGroup;
+			children = (
+				F6B0804815B9E0E500962780 /* sliderBG.png */,
+				F6B0804915B9E0E500962780 /* sliderBG@2x.png */,
+			);
+			name = sliderBG;
+			path = images/sliderBG;
+			sourceTree = SOURCE_ROOT;
+		};
+		F6B0804A15B9E0E500962780 /* toolsBG */ = {
+			isa = PBXGroup;
+			children = (
+				F6B0804B15B9E0E500962780 /* toolsBG.png */,
+				F6B0804C15B9E0E500962780 /* toolsBG@2x.png */,
+			);
+			name = toolsBG;
+			path = images/toolsBG;
+			sourceTree = SOURCE_ROOT;
+		};
+		F6B0805115B9E88700962780 /* wrapEdgesDefault */ = {
+			isa = PBXGroup;
+			children = (
+				F6B0805215B9E88700962780 /* wrapEdgesDefault.png */,
+				F6B0805315B9E88700962780 /* wrapEdgesDefault@2x.png */,
+			);
+			name = wrapEdgesDefault;
+			path = images/wrapEdgesDefault;
+			sourceTree = SOURCE_ROOT;
+		};
+		F6B0805415B9E88700962780 /* wrapEdgesSelected */ = {
+			isa = PBXGroup;
+			children = (
+				F6B0805515B9E88700962780 /* wrapEdgesSelected.png */,
+				F6B0805615B9E88700962780 /* wrapEdgesSelected@2x.png */,
+			);
+			name = wrapEdgesSelected;
+			path = images/wrapEdgesSelected;
+			sourceTree = SOURCE_ROOT;
+		};
+		F6C38F5F15ACDF1000166590 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				F6A05615160F557000004EC8 /* patternButton */,
+				F6A055FA160F1AFA00004EC8 /* tickButton */,
+				F6FCB95915BE056300DF221E /* moreButton */,
+				F6C7A5F015BA2B5A00687837 /* buttonOff */,
+				F6C7A5F315BA2B5A00687837 /* buttonOn */,
+				F6C7A5EA15BA1A4500687837 /* pauseButton */,
+				F6C7A5DE15BA192600687837 /* playButton */,
+				F6C7A5E115BA192600687837 /* stepButton */,
+				F6C7A5D915BA176500687837 /* playBG */,
+				F6C7A5D415BA137A00687837 /* clearButton */,
+				F6C7A5CF15BA12D600687837 /* randomButton */,
+				F6C7A5BF15B9F13E00687837 /* hueColourPickerBG */,
+				F6B0805115B9E88700962780 /* wrapEdgesDefault */,
+				F6B0805415B9E88700962780 /* wrapEdgesSelected */,
+				F6B0804715B9E0E500962780 /* sliderBG */,
+				F6B0804A15B9E0E500962780 /* toolsBG */,
+				F6B0803315B9D74800962780 /* colourPickerReticle */,
+				F6B0802D15B9D06300962780 /* colourPickerBG */,
+				F677CF4E15AE1FBD008A7F68 /* yinYang */,
+				F6C38F6015ACDF2100166590 /* colourCircle.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		F6C7A5BF15B9F13E00687837 /* hueColourPickerBG */ = {
+			isa = PBXGroup;
+			children = (
+				F6C7A5C015B9F13E00687837 /* hueColourPickerBG.png */,
+				F6C7A5C115B9F13E00687837 /* hueColourPickerBG@2x.png */,
+			);
+			name = hueColourPickerBG;
+			path = images/hueColourPickerBG;
+			sourceTree = SOURCE_ROOT;
+		};
+		F6C7A5CF15BA12D600687837 /* randomButton */ = {
+			isa = PBXGroup;
+			children = (
+				F6C7A5D015BA12D600687837 /* randomButton.png */,
+				F6C7A5D115BA12D600687837 /* randomButton@2x.png */,
+			);
+			name = randomButton;
+			path = images/randomButton;
+			sourceTree = SOURCE_ROOT;
+		};
+		F6C7A5D415BA137A00687837 /* clearButton */ = {
+			isa = PBXGroup;
+			children = (
+				F6C7A5D515BA137A00687837 /* clearButton.png */,
+				F6C7A5D615BA137A00687837 /* clearButton@2x.png */,
+			);
+			name = clearButton;
+			path = images/clearButton;
+			sourceTree = SOURCE_ROOT;
+		};
+		F6C7A5D915BA176500687837 /* playBG */ = {
+			isa = PBXGroup;
+			children = (
+				F6C7A5DA15BA176500687837 /* playBG.png */,
+				F6C7A5DB15BA176500687837 /* playBG@2x.png */,
+			);
+			name = playBG;
+			path = images/playBG;
+			sourceTree = SOURCE_ROOT;
+		};
+		F6C7A5DE15BA192600687837 /* playButton */ = {
+			isa = PBXGroup;
+			children = (
+				F6C7A5DF15BA192600687837 /* playButton.png */,
+				F6C7A5E015BA192600687837 /* playButton@2x.png */,
+			);
+			name = playButton;
+			path = images/playButton;
+			sourceTree = SOURCE_ROOT;
+		};
+		F6C7A5E115BA192600687837 /* stepButton */ = {
+			isa = PBXGroup;
+			children = (
+				F6C7A5E215BA192600687837 /* stepButton.png */,
+				F6C7A5E315BA192600687837 /* stepButton@2x.png */,
+			);
+			name = stepButton;
+			path = images/stepButton;
+			sourceTree = SOURCE_ROOT;
+		};
+		F6C7A5EA15BA1A4500687837 /* pauseButton */ = {
+			isa = PBXGroup;
+			children = (
+				F6C7A5EB15BA1A4500687837 /* pauseButton.png */,
+				F6C7A5EC15BA1A4500687837 /* pauseButton@2x.png */,
+			);
+			name = pauseButton;
+			path = images/pauseButton;
+			sourceTree = SOURCE_ROOT;
+		};
+		F6C7A5EF15BA27F400687837 /* Settings View */ = {
+			isa = PBXGroup;
+			children = (
+				F6DCC04315BCA63B00CE2E6A /* Settings Table View */,
+				F6C7A5FA15BA2D3500687837 /* OJFSettingsViewController.h */,
+				F6C7A5FB15BA2D3500687837 /* OJFSettingsViewController.m */,
+				F623E772160DCEF400A7AB7A /* OJFSettingsViewController.xib */,
+			);
+			name = "Settings View";
+			sourceTree = "<group>";
+		};
+		F6C7A5F015BA2B5A00687837 /* buttonOff */ = {
+			isa = PBXGroup;
+			children = (
+				F6C7A5F115BA2B5A00687837 /* buttonOff.png */,
+				F6C7A5F215BA2B5A00687837 /* buttonOff@2x.png */,
+			);
+			name = buttonOff;
+			path = images/buttonOff;
+			sourceTree = SOURCE_ROOT;
+		};
+		F6C7A5F315BA2B5A00687837 /* buttonOn */ = {
+			isa = PBXGroup;
+			children = (
+				F6C7A5F415BA2B5A00687837 /* buttonOn.png */,
+				F6C7A5F515BA2B5A00687837 /* buttonOn@2x.png */,
+			);
+			name = buttonOn;
+			path = images/buttonOn;
+			sourceTree = SOURCE_ROOT;
+		};
+		F6C7A5FD15BB12A500687837 /* Data Classes */ = {
+			isa = PBXGroup;
+			children = (
+				F6F6E22716125800005C41A1 /* Model Categories */,
+				F65AD4B815BC9BB300187B04 /* Models */,
+				F6C7A5FE15BB12B900687837 /* GameOfLife.xcdatamodeld */,
+			);
+			name = "Data Classes";
+			sourceTree = "<group>";
+		};
+		F6DCC04315BCA63B00CE2E6A /* Settings Table View */ = {
+			isa = PBXGroup;
+			children = (
+				F6DCC04515BCA6EC00CE2E6A /* OJFSettingsTableViewController.h */,
+				F6DCC04615BCA6EC00CE2E6A /* OJFSettingsTableViewController.m */,
+				F623E770160DCE7E00A7AB7A /* OJFSettingsTableViewController.xib */,
+			);
+			name = "Settings Table View";
+			sourceTree = "<group>";
+		};
+		F6E0776815AC30D40066EFCC = {
+			isa = PBXGroup;
+			children = (
+				F6E43D7F1681185C00246F1A /* Default.png */,
+				F69E906B160CA4B700F7B1D8 /* Default-568h@2x.png */,
+				F69E9068160CA44700F7B1D8 /* Default@2x.png */,
+				F6FCB96915BE09A400DF221E /* Game of Life Logo 3.png */,
+				F6FCB96715BE09A000DF221E /* Game of Life Logo 2.png */,
+				F6E0777D15AC30D40066EFCC /* GameOfLife2 */,
+				F6E0779B15AC30D40066EFCC /* GameOfLife2Tests */,
+				F6E0777615AC30D40066EFCC /* Frameworks */,
+				F6E0777415AC30D40066EFCC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F6E0777415AC30D40066EFCC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F6E0777315AC30D40066EFCC /* GameOfLife2.app */,
+				F6E0779415AC30D40066EFCC /* GameOfLife2Tests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F6E0777615AC30D40066EFCC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F65333A116090490007DCE46 /* QuartzCore.framework */,
+				F65AD4BD15BC9BF400187B04 /* CoreData.framework */,
+				F6E0777715AC30D40066EFCC /* UIKit.framework */,
+				F6E0777915AC30D40066EFCC /* Foundation.framework */,
+				F6E0777B15AC30D40066EFCC /* CoreGraphics.framework */,
+				F6E0779515AC30D40066EFCC /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F6E0777D15AC30D40066EFCC /* GameOfLife2 */ = {
+			isa = PBXGroup;
+			children = (
+				F6C7A5FD15BB12A500687837 /* Data Classes */,
+				F6C38F5F15ACDF1000166590 /* Images */,
+				F6E0778615AC30D40066EFCC /* OJFAppDelegate.h */,
+				F6E0778715AC30D40066EFCC /* OJFAppDelegate.m */,
+				F6F6E222161245F9005C41A1 /* Categories */,
+				F6C7A5EF15BA27F400687837 /* Settings View */,
+				F6B0803D15B9D7CB00962780 /* Colour Picker View */,
+				F65333A5160A60F0007DCE46 /* Patterns */,
+				F6FCB95E15BE069400DF221E /* About View */,
+				F6E077B015AC6FAD0066EFCC /* Game View */,
+				F6E0777E15AC30D40066EFCC /* Supporting Files */,
+			);
+			path = GameOfLife2;
+			sourceTree = "<group>";
+		};
+		F6E0777E15AC30D40066EFCC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F6E0777F15AC30D40066EFCC /* GameOfLife2-Info.plist */,
+				F6E0778015AC30D40066EFCC /* InfoPlist.strings */,
+				F6E0778315AC30D40066EFCC /* main.m */,
+				F6E0778515AC30D40066EFCC /* GameOfLife2-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F6E0779B15AC30D40066EFCC /* GameOfLife2Tests */ = {
+			isa = PBXGroup;
+			children = (
+				F6E077A115AC30D40066EFCC /* GameOfLife2Tests.h */,
+				F6E077A215AC30D40066EFCC /* GameOfLife2Tests.m */,
+				F6E0779C15AC30D40066EFCC /* Supporting Files */,
+			);
+			path = GameOfLife2Tests;
+			sourceTree = "<group>";
+		};
+		F6E0779C15AC30D40066EFCC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F6E0779D15AC30D40066EFCC /* GameOfLife2Tests-Info.plist */,
+				F6E0779E15AC30D40066EFCC /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F6E077B015AC6FAD0066EFCC /* Game View */ = {
+			isa = PBXGroup;
+			children = (
+				F6E0778C15AC30D40066EFCC /* OJFViewController.h */,
+				F6E0778D15AC30D40066EFCC /* OJFViewController.m */,
+				F6B5A1B1160DCD2F007E5B64 /* OJFViewController.xib */,
+				F6E077C415AC8A270066EFCC /* Game Engine */,
+				F6E077C815AC8B280066EFCC /* Grid View */,
+			);
+			name = "Game View";
+			sourceTree = "<group>";
+		};
+		F6E077C415AC8A270066EFCC /* Game Engine */ = {
+			isa = PBXGroup;
+			children = (
+				F6E077C515AC8A3A0066EFCC /* OJFCellMap.h */,
+				F6E077C615AC8A3A0066EFCC /* OJFCellMap.m */,
+			);
+			name = "Game Engine";
+			sourceTree = "<group>";
+		};
+		F6E077C815AC8B280066EFCC /* Grid View */ = {
+			isa = PBXGroup;
+			children = (
+				F6E077C915AC8B4C0066EFCC /* OJFGridView.h */,
+				F6E077CA15AC8B4C0066EFCC /* OJFGridView.m */,
+				F677CF6315AEE903008A7F68 /* OJFGridLineView.h */,
+				F677CF6415AEE903008A7F68 /* OJFGridLineView.m */,
+				F6BC44B215B0689D009DA4F6 /* OJFGestureRecogniser.h */,
+				F6BC44B315B0689D009DA4F6 /* OJFGestureRecogniser.m */,
+			);
+			name = "Grid View";
+			sourceTree = "<group>";
+		};
+		F6F6E222161245F9005C41A1 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				F6F6E22416124624005C41A1 /* UIImage+PatternString.h */,
+				F6F6E22516124624005C41A1 /* UIImage+PatternString.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		F6F6E22716125800005C41A1 /* Model Categories */ = {
+			isa = PBXGroup;
+			children = (
+				F6F6E22816125819005C41A1 /* Condition+Helper.h */,
+				F6F6E22916125819005C41A1 /* Condition+Helper.m */,
+				F6F6E22B16125828005C41A1 /* LifeType+Helper.h */,
+				F6F6E22C16125828005C41A1 /* LifeType+Helper.m */,
+				F6F6E22E16125837005C41A1 /* LifeSetting+Helper.h */,
+				F6F6E22F16125837005C41A1 /* LifeSetting+Helper.m */,
+				F6F6E2311612585A005C41A1 /* PatternType+Helper.h */,
+				F6F6E2321612585A005C41A1 /* PatternType+Helper.m */,
+				F6F6E2341612586A005C41A1 /* Pattern+Helper.h */,
+				F6F6E2351612586A005C41A1 /* Pattern+Helper.m */,
+			);
+			name = "Model Categories";
+			sourceTree = "<group>";
+		};
+		F6FCB95915BE056300DF221E /* moreButton */ = {
+			isa = PBXGroup;
+			children = (
+				F6FCB95A15BE056300DF221E /* moreButton.png */,
+				F6FCB95B15BE056300DF221E /* moreButton@2x.png */,
+			);
+			name = moreButton;
+			path = images/moreButton;
+			sourceTree = SOURCE_ROOT;
+		};
+		F6FCB95E15BE069400DF221E /* About View */ = {
+			isa = PBXGroup;
+			children = (
+				F6FCB96215BE094E00DF221E /* HTML */,
+				F6FCB95F15BE06A700DF221E /* OJFAboutViewController.h */,
+				F6FCB96015BE06A700DF221E /* OJFAboutViewController.m */,
+				F623E76D160DCE1F00A7AB7A /* OJFAboutViewController.xib */,
+			);
+			name = "About View";
+			sourceTree = "<group>";
+		};
+		F6FCB96215BE094E00DF221E /* HTML */ = {
+			isa = PBXGroup;
+			children = (
+				F6FCB96315BE094E00DF221E /* about.html */,
+				F6FCB96415BE094E00DF221E /* docstyle.css */,
+			);
+			path = HTML;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F6E0777215AC30D40066EFCC /* GameOfLife2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F6E077A615AC30D40066EFCC /* Build configuration list for PBXNativeTarget "GameOfLife2" */;
+			buildPhases = (
+				F6E0776F15AC30D40066EFCC /* Sources */,
+				F6E0777015AC30D40066EFCC /* Frameworks */,
+				F6E0777115AC30D40066EFCC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GameOfLife2;
+			productName = GameOfLife2;
+			productReference = F6E0777315AC30D40066EFCC /* GameOfLife2.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F6E0779315AC30D40066EFCC /* GameOfLife2Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F6E077A915AC30D40066EFCC /* Build configuration list for PBXNativeTarget "GameOfLife2Tests" */;
+			buildPhases = (
+				F6E0778F15AC30D40066EFCC /* Sources */,
+				F6E0779015AC30D40066EFCC /* Frameworks */,
+				F6E0779115AC30D40066EFCC /* Resources */,
+				F6E0779215AC30D40066EFCC /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F6E0779A15AC30D40066EFCC /* PBXTargetDependency */,
+			);
+			name = GameOfLife2Tests;
+			productName = GameOfLife2Tests;
+			productReference = F6E0779415AC30D40066EFCC /* GameOfLife2Tests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F6E0776A15AC30D40066EFCC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = OJF;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Oliver Foggin";
+			};
+			buildConfigurationList = F6E0776D15AC30D40066EFCC /* Build configuration list for PBXProject "GameOfLife2" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F6E0776815AC30D40066EFCC;
+			productRefGroup = F6E0777415AC30D40066EFCC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F6E0777215AC30D40066EFCC /* GameOfLife2 */,
+				F6E0779315AC30D40066EFCC /* GameOfLife2Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F6E0777115AC30D40066EFCC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6E0778215AC30D40066EFCC /* InfoPlist.strings in Resources */,
+				F6C38F6215ACDF2100166590 /* colourCircle.png in Resources */,
+				F677CF5115AE1FBD008A7F68 /* yinYang.png in Resources */,
+				F677CF5215AE1FBD008A7F68 /* yinYang@2x.png in Resources */,
+				F6B0803015B9D06300962780 /* colourPickerBG.png in Resources */,
+				F6B0803115B9D06300962780 /* colourPickerBG@2x.png in Resources */,
+				F6B0803915B9D74800962780 /* colourPickerReticle.png in Resources */,
+				F6B0803A15B9D74800962780 /* colourPickerReticle@2x.png in Resources */,
+				F6B0804D15B9E0E500962780 /* sliderBG.png in Resources */,
+				F6B0804E15B9E0E500962780 /* sliderBG@2x.png in Resources */,
+				F6B0804F15B9E0E500962780 /* toolsBG.png in Resources */,
+				F6B0805015B9E0E500962780 /* toolsBG@2x.png in Resources */,
+				F6B0805715B9E88700962780 /* wrapEdgesDefault.png in Resources */,
+				F6B0805815B9E88700962780 /* wrapEdgesDefault@2x.png in Resources */,
+				F6B0805915B9E88700962780 /* wrapEdgesSelected.png in Resources */,
+				F6B0805A15B9E88700962780 /* wrapEdgesSelected@2x.png in Resources */,
+				F6C7A5C215B9F13E00687837 /* hueColourPickerBG.png in Resources */,
+				F6C7A5C315B9F13E00687837 /* hueColourPickerBG@2x.png in Resources */,
+				F6C7A5D215BA12D600687837 /* randomButton.png in Resources */,
+				F6C7A5D315BA12D600687837 /* randomButton@2x.png in Resources */,
+				F6C7A5D715BA137A00687837 /* clearButton.png in Resources */,
+				F6C7A5D815BA137A00687837 /* clearButton@2x.png in Resources */,
+				F6C7A5DC15BA176500687837 /* playBG.png in Resources */,
+				F6C7A5DD15BA176500687837 /* playBG@2x.png in Resources */,
+				F6C7A5E415BA192600687837 /* playButton.png in Resources */,
+				F6C7A5E515BA192600687837 /* playButton@2x.png in Resources */,
+				F6C7A5E615BA192600687837 /* stepButton.png in Resources */,
+				F6C7A5E715BA192600687837 /* stepButton@2x.png in Resources */,
+				F6C7A5ED15BA1A4500687837 /* pauseButton.png in Resources */,
+				F6C7A5EE15BA1A4500687837 /* pauseButton@2x.png in Resources */,
+				F6C7A5F615BA2B5A00687837 /* buttonOff.png in Resources */,
+				F6C7A5F715BA2B5A00687837 /* buttonOff@2x.png in Resources */,
+				F6C7A5F815BA2B5A00687837 /* buttonOn.png in Resources */,
+				F6C7A5F915BA2B5A00687837 /* buttonOn@2x.png in Resources */,
+				F6FCB95C15BE056300DF221E /* moreButton.png in Resources */,
+				F6FCB95D15BE056300DF221E /* moreButton@2x.png in Resources */,
+				F6FCB96515BE094E00DF221E /* about.html in Resources */,
+				F6FCB96615BE094E00DF221E /* docstyle.css in Resources */,
+				F6FCB96815BE09A000DF221E /* Game of Life Logo 2.png in Resources */,
+				F6FCB96A15BE09A400DF221E /* Game of Life Logo 3.png in Resources */,
+				F69E9069160CA44700F7B1D8 /* Default@2x.png in Resources */,
+				F69E906C160CA4B700F7B1D8 /* Default-568h@2x.png in Resources */,
+				F6B5A1B2160DCD2F007E5B64 /* OJFViewController.xib in Resources */,
+				F623E76E160DCE1F00A7AB7A /* OJFAboutViewController.xib in Resources */,
+				F623E771160DCE7E00A7AB7A /* OJFSettingsTableViewController.xib in Resources */,
+				F623E773160DCEF400A7AB7A /* OJFSettingsViewController.xib in Resources */,
+				F6518E86160DD35700B520FB /* OJFColourPickerViewController.xib in Resources */,
+				F63F931D160E387A00D98084 /* OJFPatternViewController.xib in Resources */,
+				F6A055FD160F1AFA00004EC8 /* tickButton.png in Resources */,
+				F6A055FE160F1AFA00004EC8 /* tickButton@2x.png in Resources */,
+				F6A05604160F1EF800004EC8 /* OJFPatternSelectViewController.xib in Resources */,
+				F6A05618160F557000004EC8 /* patternButton.png in Resources */,
+				F6A05619160F557000004EC8 /* patternButton@2x.png in Resources */,
+				F6A0561C16123FD100004EC8 /* OJFPatternCell.xib in Resources */,
+				F6E43D801681185C00246F1A /* Default.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6E0779115AC30D40066EFCC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6E077A015AC30D40066EFCC /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		F6E0779215AC30D40066EFCC /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F6E0776F15AC30D40066EFCC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6E0778415AC30D40066EFCC /* main.m in Sources */,
+				F6E0778815AC30D40066EFCC /* OJFAppDelegate.m in Sources */,
+				F6E0778E15AC30D40066EFCC /* OJFViewController.m in Sources */,
+				F6E077C715AC8A3A0066EFCC /* OJFCellMap.m in Sources */,
+				F6E077CB15AC8B4C0066EFCC /* OJFGridView.m in Sources */,
+				F6C7A5CD15BA083000687837 /* UIColor-HSVAdditions.m in Sources */,
+				F6C7A5CE15BA083200687837 /* UIColor-Expanded.m in Sources */,
+				F677CF6515AEE903008A7F68 /* OJFGridLineView.m in Sources */,
+				F6BC44B415B0689D009DA4F6 /* OJFGestureRecogniser.m in Sources */,
+				F6B0804015B9D81900962780 /* OJFColourPickerViewController.m in Sources */,
+				F6B0804315B9D83400962780 /* OJFHuePickerView.m in Sources */,
+				F6B0804615B9D84400962780 /* OJFColourPickerView.m in Sources */,
+				F6C7A5FC15BA2D3500687837 /* OJFSettingsViewController.m in Sources */,
+				F6C7A60015BB12B900687837 /* GameOfLife.xcdatamodeld in Sources */,
+				F6DCC03B15BCA11600CE2E6A /* Condition.m in Sources */,
+				F6DCC04715BCA6EC00CE2E6A /* OJFSettingsTableViewController.m in Sources */,
+				F6FCB94E15BDD68B00DF221E /* LifeSetting.m in Sources */,
+				F6FCB95115BDD68C00DF221E /* LifeType.m in Sources */,
+				F6FCB96115BE06A700DF221E /* OJFAboutViewController.m in Sources */,
+				F63F931C160E387A00D98084 /* OJFPatternViewController.m in Sources */,
+				F6A05603160F1EF800004EC8 /* OJFPatternSelectViewController.m in Sources */,
+				F6A05607160F2A8600004EC8 /* Pattern.m in Sources */,
+				F6A0560A160F2A8700004EC8 /* PatternType.m in Sources */,
+				F6A0561F1612417300004EC8 /* OJFPatternCell.m in Sources */,
+				F6F6E22616124624005C41A1 /* UIImage+PatternString.m in Sources */,
+				F6F6E22A16125819005C41A1 /* Condition+Helper.m in Sources */,
+				F6F6E22D16125828005C41A1 /* LifeType+Helper.m in Sources */,
+				F6F6E23016125837005C41A1 /* LifeSetting+Helper.m in Sources */,
+				F6F6E2331612585A005C41A1 /* PatternType+Helper.m in Sources */,
+				F6F6E2361612586A005C41A1 /* Pattern+Helper.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6E0778F15AC30D40066EFCC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6E077A315AC30D40066EFCC /* GameOfLife2Tests.m in Sources */,
+				F6C7A5CB15BA06DB00687837 /* UIColor-Expanded.m in Sources */,
+				F6C7A5CC15BA06DB00687837 /* UIColor-HSVAdditions.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F6E0779A15AC30D40066EFCC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F6E0777215AC30D40066EFCC /* GameOfLife2 */;
+			targetProxy = F6E0779915AC30D40066EFCC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F6E0778015AC30D40066EFCC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F6E0778115AC30D40066EFCC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		F6E0779E15AC30D40066EFCC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F6E0779F15AC30D40066EFCC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F6E077A415AC30D40066EFCC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F6E077A515AC30D40066EFCC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Oliver Foggin";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "52942394-AAEF-4861-892C-258A0667634A";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F6E077A715AC30D40066EFCC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GameOfLife2/GameOfLife2-Prefix.pch";
+				INFOPLIST_FILE = "GameOfLife2/GameOfLife2-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		F6E077A815AC30D40066EFCC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GameOfLife2/GameOfLife2-Prefix.pch";
+				INFOPLIST_FILE = "GameOfLife2/GameOfLife2-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		F6E077AA15AC30D40066EFCC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/GameOfLife2.app/GameOfLife2";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GameOfLife2/GameOfLife2-Prefix.pch";
+				INFOPLIST_FILE = "GameOfLife2Tests/GameOfLife2Tests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		F6E077AB15AC30D40066EFCC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/GameOfLife2.app/GameOfLife2";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GameOfLife2/GameOfLife2-Prefix.pch";
+				INFOPLIST_FILE = "GameOfLife2Tests/GameOfLife2Tests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F6E0776D15AC30D40066EFCC /* Build configuration list for PBXProject "GameOfLife2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6E077A415AC30D40066EFCC /* Debug */,
+				F6E077A515AC30D40066EFCC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F6E077A615AC30D40066EFCC /* Build configuration list for PBXNativeTarget "GameOfLife2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6E077A715AC30D40066EFCC /* Debug */,
+				F6E077A815AC30D40066EFCC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F6E077A915AC30D40066EFCC /* Build configuration list for PBXNativeTarget "GameOfLife2Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6E077AA15AC30D40066EFCC /* Debug */,
+				F6E077AB15AC30D40066EFCC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F6C7A5FE15BB12B900687837 /* GameOfLife.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F687365C160B95B000D2B7EC /* GameOfLife 2.xcdatamodel */,
+				F6C7A5FF15BB12B900687837 /* GameOfLife.xcdatamodel */,
+			);
+			currentVersion = F687365C160B95B000D2B7EC /* GameOfLife 2.xcdatamodel */;
+			path = GameOfLife.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = F6E0776A15AC30D40066EFCC /* Project object */;
+}

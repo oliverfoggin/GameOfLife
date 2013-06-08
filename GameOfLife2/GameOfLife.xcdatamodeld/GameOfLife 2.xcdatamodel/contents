@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1810" systemVersion="12C54" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Condition" representedClassName="Condition" syncable="YES">
+        <attribute name="neighbours" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="settingBirth" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="LifeSetting" inverseName="birthConditions" inverseEntity="LifeSetting" syncable="YES"/>
+        <relationship name="settingSurvival" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="LifeSetting" inverseName="survivalConditions" inverseEntity="LifeSetting" syncable="YES"/>
+    </entity>
+    <entity name="LifeSetting" representedClassName="LifeSetting" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="birthConditions" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Condition" inverseName="settingBirth" inverseEntity="Condition" syncable="YES"/>
+        <relationship name="survivalConditions" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Condition" inverseName="settingSurvival" inverseEntity="Condition" syncable="YES"/>
+        <relationship name="type" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="LifeType" inverseName="lifeSettings" inverseEntity="LifeType" syncable="YES"/>
+    </entity>
+    <entity name="LifeType" representedClassName="LifeType" syncable="YES">
+        <attribute name="allowDelete" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="lifeSettings" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="LifeSetting" inverseName="type" inverseEntity="LifeSetting" syncable="YES"/>
+    </entity>
+    <entity name="Pattern" representedClassName="Pattern" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="notes" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="patternString" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="patternType" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="PatternType" inverseName="patterns" inverseEntity="PatternType" syncable="YES"/>
+    </entity>
+    <entity name="PatternType" representedClassName="PatternType" syncable="YES">
+        <attribute name="allowDelete" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="patterns" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Pattern" inverseName="patternType" inverseEntity="Pattern" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Condition" positionX="351" positionY="207" width="128" height="90"/>
+        <element name="LifeSetting" positionX="160" positionY="192" width="128" height="105"/>
+        <element name="LifeType" positionX="160" positionY="192" width="128" height="90"/>
+        <element name="PatternType" positionX="160" positionY="192" width="128" height="90"/>
+        <element name="Pattern" positionX="160" positionY="192" width="128" height="105"/>
+    </elements>
+</model>

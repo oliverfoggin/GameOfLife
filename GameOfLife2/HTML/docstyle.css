@@ -1,0 +1,21 @@
+body
+{
+    background-color:#FFFFFF;
+	color:#000000;
+}
+p
+{ 
+    font-family:helvetica;
+    font-size:12pt;
+    text-align:center;
+}
+.hy
+{
+    color:#000000;
+}
+.heading
+{
+    color:#000000;
+    font-size:14pt;
+    font-weight:bold;
+}

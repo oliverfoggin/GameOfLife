@@ -1,0 +1,801 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2840" systemVersion="12C54" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="JV0-Uf-EBs">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1926"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="5">
+            <objects>
+                <viewController id="2" customClass="OJFViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3">
+                        <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="h5S-Ly-3KF" customClass="OJFGridView">
+                                <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="YwR-gK-8N1">
+                                        <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outlet property="image" destination="YwR-gK-8N1" id="dKJ-Be-VWa"/>
+                                </connections>
+                            </view>
+                            <view userInteractionEnabled="NO" contentMode="scaleToFill" id="NT4-Iy-akl" customClass="OJFGridLineView">
+                                <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" id="h5E-eu-QNx" userLabel="Settings View">
+                                <rect key="frame" x="525" y="20" width="44" height="280"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="toolsBG.png" id="xVC-67-0do">
+                                        <rect key="frame" x="0.0" y="0.0" width="45" height="280"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="sb3-Bc-b16" userLabel="Random Button">
+                                        <rect key="frame" x="2" y="5" width="40" height="40"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" image="randomButton.png">
+                                            <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="randomButtonPressed:" destination="2" eventType="touchUpInside" id="dj4-t4-VUj"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="up9-H2-Ohc" userLabel="Clear Button">
+                                        <rect key="frame" x="4" y="52" width="36" height="40"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" image="clearButton.png">
+                                            <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="clearButtonPressed:" destination="2" eventType="touchUpInside" id="3aP-WV-Lss"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Dfq-Av-1Iu" userLabel="Colour Button">
+                                        <rect key="frame" x="4" y="98" width="36" height="40"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" image="colourCircle.png">
+                                            <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="clearButtonPressed:" destination="2" eventType="touchUpInside" id="2X9-9Y-8hD"/>
+                                            <segue destination="I4c-ex-U1e" kind="push" identifier="colourSegue" id="UVO-u8-dH4"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="E0U-vv-Znu" userLabel="Setting Button">
+                                        <rect key="frame" x="4" y="146" width="36" height="36"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" image="yinYang.png">
+                                            <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="b7Q-10-IaW" kind="push" identifier="settingsSegue" id="o2w-ph-5ff"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="N4l-p6-80N" userLabel="Wrap Button">
+                                        <rect key="frame" x="5" y="196" width="34" height="30"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" image="wrapEdgesDefault.png">
+                                            <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="selected" image="wrapEdgesSelected.png"/>
+                                        <state key="highlighted">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="wrapEdgesButtonPressed:" destination="2" eventType="touchUpInside" id="ltV-ga-KLT"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="jZR-ig-sFq" userLabel="About Button">
+                                        <rect key="frame" x="5" y="240" width="34" height="34"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" image="moreButton.png">
+                                            <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="SwO-o1-f9c" kind="push" id="Ja7-Jg-doY"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" restorationIdentifier="" id="Wwk-N6-TFF" userLabel="Play Pause View">
+                                <rect key="frame" x="240" y="276" width="88" height="44"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="playBG.png" id="nU4-ar-7uM">
+                                        <rect key="frame" x="0.0" y="0.0" width="88" height="44"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="TNq-d9-Nay">
+                                        <rect key="frame" x="4" y="2" width="40" height="40"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" image="playButton.png">
+                                            <color key="titleColor" red="0.19607843137254902" green="0.30980392156862746" blue="0.52156862745098043" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="selected" image="pauseButton.png">
+                                            <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="playPauseButtonPressed:" destination="2" eventType="touchUpInside" id="hrO-ew-2xj"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="RFe-44-Izp">
+                                        <rect key="frame" x="49" y="4" width="35" height="35"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" image="stepButton.png">
+                                            <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="stepButtonPressed:" destination="2" eventType="touchUpInside" id="xnE-gv-olf"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" id="ZcI-Jw-JU8" userLabel="Speed View">
+                                <rect key="frame" x="0.0" y="20" width="44" height="280"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="sliderBG.png" id="bXb-VJ-lMT">
+                                        <rect key="frame" x="0.0" y="0.0" width="44" height="280"/>
+                                    </imageView>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="10" minValue="0.20000000000000001" maxValue="60" id="EWh-Tp-j0c">
+                                        <rect key="frame" x="-88" y="129" width="220" height="23"/>
+                                        <connections>
+                                            <action selector="speedSliderChanged:" destination="2" eventType="valueChanged" id="Umq-or-1ba"/>
+                                        </connections>
+                                    </slider>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="F" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="gPM-5R-Lgh">
+                                        <rect key="frame" x="6" y="11" width="32" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="S" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8iC-eX-PJE">
+                                        <rect key="frame" x="6" y="251" width="32" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="hSw-cx-sn5"/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="gridView" destination="h5S-Ly-3KF" id="uAf-Nh-tRd"/>
+                        <outlet property="lineView" destination="NT4-Iy-akl" id="yg5-oj-wt1"/>
+                        <outlet property="playPauseButton" destination="TNq-d9-Nay" id="j9F-DY-GUf"/>
+                        <outlet property="playPauseView" destination="Wwk-N6-TFF" id="TFI-Tk-3Rt"/>
+                        <outlet property="reverseBGView" destination="bXb-VJ-lMT" id="eOH-wv-Jna"/>
+                        <outlet property="settingsView" destination="h5E-eu-QNx" id="lxj-a2-Bl5"/>
+                        <outlet property="speedSlider" destination="EWh-Tp-j0c" id="xZO-aG-eyb"/>
+                        <outlet property="speedView" destination="ZcI-Jw-JU8" id="qaS-ep-xy6"/>
+                        <outlet property="wrapEdgesButton" destination="N4l-p6-80N" id="WKl-G0-PJh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="75" y="135"/>
+        </scene>
+        <!--About View Controller - About the app-->
+        <scene sceneID="7Im-w3-uyI">
+            <objects>
+                <viewController id="SwO-o1-f9c" customClass="OJFAboutViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Y5Y-gR-3Gr">
+                        <rect key="frame" x="0.0" y="44" width="568" height="276"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" id="C0g-9Q-q1H">
+                                <rect key="frame" x="0.0" y="0.0" width="568" height="276"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <outlet property="delegate" destination="SwO-o1-f9c" id="nbh-2W-Im9"/>
+                                </connections>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="About the app" id="xSP-Hw-zpC"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="blackOpaque" prompted="NO"/>
+                    <connections>
+                        <outlet property="webView" destination="C0g-9Q-q1H" id="RKd-Rs-Qvc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9js-BE-rjI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="900" y="557"/>
+        </scene>
+        <!--Colour Picker View Controller-->
+        <scene sceneID="gOs-sS-yZc">
+            <objects>
+                <viewController id="I4c-ex-U1e" customClass="OJFColourPickerViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dkR-5v-5cu">
+                        <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="yvn-KC-7VI" customClass="OJFHuePickerView">
+                                <rect key="frame" x="132" y="20" width="40" height="280"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="hueColourPickerBG.png" id="kOu-0X-j4z">
+                                        <rect key="frame" x="0.0" y="0.0" width="40" height="280"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="colourPickerReticle.png" id="8B7-Lk-c8N">
+                                        <rect key="frame" x="9" y="129" width="22" height="22"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="reticle" destination="8B7-Lk-c8N" id="FHL-8j-EvW"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" id="NZ6-hC-dMP" customClass="OJFColourPickerView">
+                                <rect key="frame" x="180" y="20" width="280" height="280"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="colourPickerBG.png" id="vMZ-gt-A3T">
+                                        <rect key="frame" x="0.0" y="0.0" width="280" height="280"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="colourPickerReticle.png" id="NyF-DV-a67">
+                                        <rect key="frame" x="129" y="129" width="22" height="22"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.32665455341339111" green="0.98276686668395996" blue="0.98353660106658936" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <outlet property="reticle" destination="NyF-DV-a67" id="jZa-qk-mgE"/>
+                                </connections>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="bxa-lA-d0i">
+                                <rect key="frame" x="20" y="204" width="104" height="44"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Alive">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="aliveButtonPressed:" destination="I4c-ex-U1e" eventType="touchUpInside" id="e0y-jX-LhO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="LwI-dQ-ZEO">
+                                <rect key="frame" x="20" y="256" width="104" height="44"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Dead">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="deadButtonPressed:" destination="I4c-ex-U1e" eventType="touchUpInside" id="QII-vD-Vzb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="TU3-07-kjy">
+                                <rect key="frame" x="20" y="20" width="104" height="44"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Done">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="doneButtonPressed:" destination="I4c-ex-U1e" eventType="touchUpInside" id="Mn6-eH-q6n"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="i4n-px-jZA"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="aliveButton" destination="bxa-lA-d0i" id="Cxj-7W-nv1"/>
+                        <outlet property="colourPicker" destination="NZ6-hC-dMP" id="PZF-sh-0JT"/>
+                        <outlet property="deadButton" destination="LwI-dQ-ZEO" id="1NA-Uy-QR6"/>
+                        <outlet property="huePicker" destination="yvn-KC-7VI" id="PZr-Ge-foA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hqd-Vc-ouh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="900" y="-375"/>
+        </scene>
+        <!--Settings View Controller - Add Settings-->
+        <scene sceneID="UVg-mO-96q">
+            <objects>
+                <viewController id="bNc-5m-IlV" customClass="OJFSettingsViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GTn-fh-JzX">
+                        <rect key="frame" x="0.0" y="44" width="568" height="276"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Survival Settings" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="xuo-Hv-ssF">
+                                <rect key="frame" x="20" y="64" width="529" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="yNX-WF-QbL">
+                                <rect key="frame" x="110" y="89" width="43" height="43"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <state key="normal" title="1" backgroundImage="buttonOff.png">
+                                    <color key="titleColor" cocoaTouchSystemColor="lightTextColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" backgroundImage="buttonOn.png"/>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="survivalButtonPressed:" destination="bNc-5m-IlV" eventType="touchUpInside" id="Nam-Il-fV5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="8Gu-4h-Yn8">
+                                <rect key="frame" x="161" y="89" width="43" height="43"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <state key="normal" title="2" backgroundImage="buttonOff.png">
+                                    <color key="titleColor" cocoaTouchSystemColor="lightTextColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" backgroundImage="buttonOn.png"/>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="survivalButtonPressed:" destination="bNc-5m-IlV" eventType="touchUpInside" id="FVe-h2-Hgc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="hHP-sl-LYp">
+                                <rect key="frame" x="212" y="88" width="43" height="44"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <state key="normal" title="3" backgroundImage="buttonOff.png">
+                                    <color key="titleColor" cocoaTouchSystemColor="lightTextColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" backgroundImage="buttonOn.png"/>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="survivalButtonPressed:" destination="bNc-5m-IlV" eventType="touchUpInside" id="7Us-0p-quh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="UOT-Yo-f6O">
+                                <rect key="frame" x="263" y="88" width="43" height="44"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <state key="normal" title="4" backgroundImage="buttonOff.png">
+                                    <color key="titleColor" cocoaTouchSystemColor="lightTextColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" backgroundImage="buttonOn.png"/>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="survivalButtonPressed:" destination="bNc-5m-IlV" eventType="touchUpInside" id="Oea-Z0-8Rb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="f2B-MP-noz">
+                                <rect key="frame" x="314" y="88" width="43" height="44"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <state key="normal" title="5" backgroundImage="buttonOff.png">
+                                    <color key="titleColor" cocoaTouchSystemColor="lightTextColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" backgroundImage="buttonOn.png"/>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="survivalButtonPressed:" destination="bNc-5m-IlV" eventType="touchUpInside" id="n74-GW-P4b"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="iD8-fD-eKe">
+                                <rect key="frame" x="365" y="88" width="43" height="44"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <state key="normal" title="6" backgroundImage="buttonOff.png">
+                                    <color key="titleColor" cocoaTouchSystemColor="lightTextColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" backgroundImage="buttonOn.png"/>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="survivalButtonPressed:" destination="bNc-5m-IlV" eventType="touchUpInside" id="3qd-hS-Clm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Bhx-ei-MQf">
+                                <rect key="frame" x="416" y="88" width="43" height="44"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <state key="normal" title="7" backgroundImage="buttonOff.png">
+                                    <color key="titleColor" cocoaTouchSystemColor="lightTextColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" backgroundImage="buttonOn.png"/>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="survivalButtonPressed:" destination="bNc-5m-IlV" eventType="touchUpInside" id="wkK-hV-r0W"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="5WV-Oo-MzA">
+                                <rect key="frame" x="467" y="88" width="43" height="44"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <state key="normal" title="8" backgroundImage="buttonOff.png">
+                                    <color key="titleColor" cocoaTouchSystemColor="lightTextColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" backgroundImage="buttonOn.png"/>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="survivalButtonPressed:" destination="bNc-5m-IlV" eventType="touchUpInside" id="qg5-yN-tc5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="sgD-qS-MlD">
+                                <rect key="frame" x="59" y="89" width="43" height="43"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <state key="normal" title="0" backgroundImage="buttonOff.png">
+                                    <color key="titleColor" cocoaTouchSystemColor="lightTextColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" backgroundImage="buttonOn.png"/>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="survivalButtonPressed:" destination="bNc-5m-IlV" eventType="touchUpInside" id="VuA-2J-eVn"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Birth Settings" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="rsZ-oW-Hcp">
+                                <rect key="frame" x="71" y="140" width="427" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="zkn-cB-Uxr">
+                                <rect key="frame" x="110" y="165" width="44" height="43"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <state key="normal" title="1" backgroundImage="buttonOff.png">
+                                    <color key="titleColor" cocoaTouchSystemColor="lightTextColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" backgroundImage="buttonOn.png"/>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="birthButtonPressed:" destination="bNc-5m-IlV" eventType="touchUpInside" id="n9V-fL-gvs"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="LBj-j9-jyl">
+                                <rect key="frame" x="161" y="165" width="43" height="43"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <state key="normal" title="2" backgroundImage="buttonOff.png">
+                                    <color key="titleColor" cocoaTouchSystemColor="lightTextColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" backgroundImage="buttonOn.png"/>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="birthButtonPressed:" destination="bNc-5m-IlV" eventType="touchUpInside" id="mfa-7P-cTQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="dTm-gR-QpE">
+                                <rect key="frame" x="212" y="165" width="43" height="43"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <state key="normal" title="3" backgroundImage="buttonOff.png">
+                                    <color key="titleColor" cocoaTouchSystemColor="lightTextColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" backgroundImage="buttonOn.png"/>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="birthButtonPressed:" destination="bNc-5m-IlV" eventType="touchUpInside" id="D2j-Hv-tkF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="UNa-dM-Q6l">
+                                <rect key="frame" x="263" y="165" width="43" height="43"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <state key="normal" title="4" backgroundImage="buttonOff.png">
+                                    <color key="titleColor" cocoaTouchSystemColor="lightTextColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" backgroundImage="buttonOn.png"/>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="birthButtonPressed:" destination="bNc-5m-IlV" eventType="touchUpInside" id="HND-fv-Zax"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="znz-e5-V9f">
+                                <rect key="frame" x="314" y="165" width="43" height="43"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <state key="normal" title="5" backgroundImage="buttonOff.png">
+                                    <color key="titleColor" cocoaTouchSystemColor="lightTextColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" backgroundImage="buttonOn.png"/>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="birthButtonPressed:" destination="bNc-5m-IlV" eventType="touchUpInside" id="R3i-Hx-JNB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="dhh-iC-TzT">
+                                <rect key="frame" x="365" y="165" width="43" height="43"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <state key="normal" title="6" backgroundImage="buttonOff.png">
+                                    <color key="titleColor" cocoaTouchSystemColor="lightTextColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" backgroundImage="buttonOn.png"/>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="birthButtonPressed:" destination="bNc-5m-IlV" eventType="touchUpInside" id="zxc-dm-3Fx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ahB-Se-kYq">
+                                <rect key="frame" x="416" y="165" width="43" height="43"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <state key="normal" title="7" backgroundImage="buttonOff.png">
+                                    <color key="titleColor" cocoaTouchSystemColor="lightTextColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" backgroundImage="buttonOn.png"/>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="birthButtonPressed:" destination="bNc-5m-IlV" eventType="touchUpInside" id="yqX-xh-rNY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="hdS-8L-oxO">
+                                <rect key="frame" x="467" y="165" width="43" height="43"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <state key="normal" title="8" backgroundImage="buttonOff.png">
+                                    <color key="titleColor" cocoaTouchSystemColor="lightTextColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" backgroundImage="buttonOn.png"/>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="birthButtonPressed:" destination="bNc-5m-IlV" eventType="touchUpInside" id="A1K-0x-rVT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="3HI-wF-zUd">
+                                <rect key="frame" x="59" y="165" width="43" height="43"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <state key="normal" title="0" backgroundImage="buttonOff.png">
+                                    <color key="titleColor" cocoaTouchSystemColor="lightTextColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" backgroundImage="buttonOn.png"/>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="birthButtonPressed:" destination="bNc-5m-IlV" eventType="touchUpInside" id="0oQ-RO-qNW"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="NWp-Ep-o3V">
+                                <rect key="frame" x="139" y="25" width="291" height="31"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" enablesReturnKeyAutomatically="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="bNc-5m-IlV" id="DgI-pe-J54"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="zkN-l9-JhL">
+                                <rect key="frame" x="263" y="0.0" width="46" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="RqG-l3-jNo">
+                                <rect key="frame" x="248" y="216" width="72" height="44"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Save">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="saveButtonPressed:" destination="bNc-5m-IlV" eventType="touchUpInside" id="kdV-zw-aT2"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Add Settings" id="1kQ-rM-ewf"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="blackOpaque" prompted="NO"/>
+                    <connections>
+                        <outlet property="nameField" destination="NWp-Ep-o3V" id="UrZ-qp-DAe"/>
+                        <outletCollection property="survivalButtons" destination="sgD-qS-MlD" id="xgZ-IY-m6V"/>
+                        <outletCollection property="survivalButtons" destination="yNX-WF-QbL" id="wtC-qs-InG"/>
+                        <outletCollection property="survivalButtons" destination="8Gu-4h-Yn8" id="Zx8-Tn-q6t"/>
+                        <outletCollection property="survivalButtons" destination="hHP-sl-LYp" id="Dhi-wN-xSE"/>
+                        <outletCollection property="survivalButtons" destination="UOT-Yo-f6O" id="spp-7U-Nsp"/>
+                        <outletCollection property="survivalButtons" destination="f2B-MP-noz" id="gGK-m0-bXk"/>
+                        <outletCollection property="survivalButtons" destination="iD8-fD-eKe" id="Cz2-x1-eDv"/>
+                        <outletCollection property="survivalButtons" destination="Bhx-ei-MQf" id="vgZ-Ec-9nQ"/>
+                        <outletCollection property="survivalButtons" destination="5WV-Oo-MzA" id="Gkd-yj-rjk"/>
+                        <outletCollection property="birthButtons" destination="3HI-wF-zUd" id="Ahf-Z7-tJA"/>
+                        <outletCollection property="birthButtons" destination="zkn-cB-Uxr" id="Tzw-Fk-2BS"/>
+                        <outletCollection property="birthButtons" destination="LBj-j9-jyl" id="zLu-bz-tUW"/>
+                        <outletCollection property="birthButtons" destination="dTm-gR-QpE" id="dKV-tK-x1x"/>
+                        <outletCollection property="birthButtons" destination="UNa-dM-Q6l" id="13E-Jt-pqw"/>
+                        <outletCollection property="birthButtons" destination="znz-e5-V9f" id="2bG-dm-MXJ"/>
+                        <outletCollection property="birthButtons" destination="dhh-iC-TzT" id="QLn-vq-04H"/>
+                        <outletCollection property="birthButtons" destination="ahB-Se-kYq" id="XbS-71-jzb"/>
+                        <outletCollection property="birthButtons" destination="hdS-8L-oxO" id="BM2-rg-Dta"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hBB-Ze-eca" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1508" y="109"/>
+        </scene>
+        <!--Settings Table View Controller - Settings-->
+        <scene sceneID="y87-JQ-1we">
+            <objects>
+                <tableViewController id="b7Q-10-IaW" customClass="OJFSettingsTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="50" sectionHeaderHeight="22" sectionFooterHeight="22" id="6Eg-jZ-OC2">
+                        <rect key="frame" x="0.0" y="44" width="568" height="276"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                        <color key="separatorColor" red="0.8980392814" green="0.8980392814" blue="0.8980392814" alpha="1" colorSpace="deviceRGB"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="settingCell" rowHeight="50" id="saY-97-wE0" customClass="OJFSettingsCell">
+                                <rect key="frame" x="0.0" y="22" width="568" height="50"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="568" height="49"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="UGM-3m-Pz0">
+                                            <rect key="frame" x="20" y="11" width="344" height="27"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </label>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="54U-lC-4ez">
+                                            <rect key="frame" x="372" y="0.0" width="176" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </label>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="SPP-hA-TLM">
+                                            <rect key="frame" x="372" y="20" width="176" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <connections>
+                                    <outlet property="birthLabel" destination="54U-lC-4ez" id="tYu-Sa-hXc"/>
+                                    <outlet property="nameLabel" destination="UGM-3m-Pz0" id="cOL-3z-fsL"/>
+                                    <outlet property="survivalLabel" destination="SPP-hA-TLM" id="GXu-P7-pGh"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="b7Q-10-IaW" id="n7T-9M-LEI"/>
+                            <outlet property="delegate" destination="b7Q-10-IaW" id="gmr-C7-wDD"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Settings" id="bS8-eB-MK1">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="H7k-Pt-xzp">
+                            <connections>
+                                <segue destination="bNc-5m-IlV" kind="push" identifier="addSegue" id="lKm-9b-moF"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="blackOpaque" prompted="NO"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dCb-Nd-x9P" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="900" y="109"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="71l-Me-NHo">
+            <objects>
+                <navigationController definesPresentationContext="YES" navigationBarHidden="YES" id="JV0-Uf-EBs" sceneMemberID="viewController">
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="vIy-Kn-ofh">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="2" kind="relationship" relationship="rootViewController" id="n9r-Jc-8dm"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="29a-1z-v7a" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-721" y="135"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="buttonOff.png" width="44" height="44"/>
+        <image name="buttonOn.png" width="44" height="44"/>
+        <image name="clearButton.png" width="40" height="40"/>
+        <image name="colourCircle.png" width="34" height="40"/>
+        <image name="colourPickerBG.png" width="280" height="280"/>
+        <image name="colourPickerReticle.png" width="22" height="22"/>
+        <image name="hueColourPickerBG.png" width="40" height="280"/>
+        <image name="moreButton.png" width="40" height="40"/>
+        <image name="pauseButton.png" width="40" height="40"/>
+        <image name="playBG.png" width="88" height="44"/>
+        <image name="playButton.png" width="40" height="40"/>
+        <image name="randomButton.png" width="40" height="40"/>
+        <image name="sliderBG.png" width="44" height="280"/>
+        <image name="stepButton.png" width="40" height="40"/>
+        <image name="toolsBG.png" width="44" height="280"/>
+        <image name="wrapEdgesDefault.png" width="44" height="38"/>
+        <image name="wrapEdgesSelected.png" width="44" height="38"/>
+        <image name="yinYang.png" width="31" height="40"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <nil key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation" orientation="landscapeRight"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
