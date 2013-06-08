@@ -89,7 +89,10 @@
     NSArray *sortDescriptors = @[sdType, sdName];
     [request setSortDescriptors:sortDescriptors];
     
-    NSFetchedResultsController *aFetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:request managedObjectContext:self.managedObjectContext sectionNameKeyPath:@"type.name" cacheName:@"AllSettings"];
+    NSFetchedResultsController *aFetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:request
+                                                                                                managedObjectContext:self.managedObjectContext
+                                                                                                  sectionNameKeyPath:@"type.name"
+                                                                                                           cacheName:nil];
     
     aFetchedResultsController.delegate = self;
     self.fetchedResultsController = aFetchedResultsController;
